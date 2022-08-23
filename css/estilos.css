@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    text-decoration: none;    
+
+}
+
+@font-face {
+    font-family:"TTNorms-Bold";
+    src: url(../assets/fonts/TTNorms-Bold.otf);
+}
+
+@font-face {
+    font-family:"TTNorms-ExtraBold";
+    src: url(../assets/fonts/TTNorms-ExtraBold.otf);
+
+}
+
+@font-face {
+    font-family:"TTNorms-Regular";
+    src: url(../assets/fonts/TTNorms-Regular.otf); 
+}
+
+
+/*---------------------------------------------------- MAIN ---------------------------------------------------------*/
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100vh 100vh 100vh 10vh; 
+    grid-template-areas: 
+    "cover  cover  cover  cover"
+    "imgp   imgp   imgp   imgp"
+    "videop videop videop videop"
+    "footer footer footer footer";
+}
+
+/*---------------------------------------------------- HEADER ---------------------------------------------------------*/
+
+header{
+    background-image: url(../assets/img/s.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 600;
+   
+}
+
+
+.header__link{
+    list-style-type: none;
+    display: flex;
+    
+}
+
+nav > ul > li{
+    padding: 20px; 
+    margin-right: 15px;
+    font-family:"TTNorms-Bold";
+
+}
+
+.header__logo img{
+    width: 50%;
+    padding-left: 10px;
+    padding-top: 9px;
+    
+}  
+
+.header__icon-mobile{
+    display: none;
+} 
+
+@media screen and (max-width: 780px){
+
+    
+    .header__link{
+        display: none;
+    }
+
+    .conteiner__icon-mobile{
+        display: flex;
+        
+    }
+    .header__icon-mobile{
+        display: inline-flex;
+        
+        
+    }
+
+    .header__logo img{
+        width: 40%;
+        
+    }
+    
+  
+
+
+   
+}
+*/
+/*------------------------------------------------ COVER -------------------------------------------------*/
+
+.cover{
+    grid-area: cover;
+    
+}
+
+.cover img{
+    margin-left: 0;
+    max-width: 100vw;
+
+   
+}
+
+@media screen and (max-width: 780px){
+    .cover img{
+        height: 100vh;
+        
+    }
+}
+
+
+/*-----------------------------------------  ÁREA  IMGP ------------------------------------------------------*/
+
+.conteiner__products{
+    grid-area: imgp;
+    background-image: url(../assets/img/s.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+    
+    
+
+    
+
+}
+
+.card__1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 70vh;
+    background-color: rgb(255, 255, 255);
+    margin-left: 20%;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    font-family:"TTNorms-ExtraBold";
+    font-size: 2em;
+   
+}
+
+.card__1 img{
+    width: 50%;
+    
+}
+
+
+.btn{
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    font-family:"TTNorms-ExtraBold";
+    font-size: 20px;
+}
+
+.card__1 .btn{
+    margin-top: 15px;
+    
+}
+
+.card__2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 70vh;
+    background-color: rgb(255, 255, 255);
+    margin-right: 20%;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    font-family:"TTNorms-ExtraBold";
+    font-size: 2em;
+   
+    
+
+} 
+
+.card__2 h3{
+    font-size: 0.9em;
+    margin-bottom: 9%;
+}
+
+.card__2 p{
+ padding-bottom: 2%;
+    
+}
+
+.card__2 img{
+    width: 70%;
+}
+
+
+@media screen and (max-width: 780px){
+    .conteiner__products{
+        background-image: url(../assets/img//s.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-direction: column;
+        height: 200vh;
+        
+    }
+
+    .card__1{
+        width: 70vw;
+        height: 70vh;
+        margin-top: 20%;
+        background-color: rgb(255, 255, 255);
+        margin-right: 20%;
+        font-size: 1em
+    }
+
+    .card__1 h3{
+        font-size: 2em;
+    }
+
+   
+
+    .card__2{
+        width: 70vw;
+        height: 70vh;
+        margin-bottom: 20%;
+        background-color: rgb(255, 255, 255);
+        margin-left: 20%;
+        font-size: 1em
+    }
+
+    .card__2 h3{
+        font-size: 1.5em;
+    }
+
+    
+    
+}
+*/
+ 
+/*------------------------------------------ secttion videop --------------------------------------*/
+
+.videop{
+    grid-area: videop;
+    background-color: coral;
+}
+.articles__general-conteiner{
+    
+    background-image: url(../assets/img//s.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.articles__general-conteiner video{
+    width: 30%;
+    border-radius: 20px;
+}
+
+.articles__general-title{
+    font-size: 4em;
+
+}
+
+
+.articles__general-subtitle{
+    font-family: "TTNorms-Bold";
+    color: #fff;
+    font-size: 3em;
+    
+}
+
+.articles__general-conteiner-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "TTNorms-ExtraBold";
+    color: #fff;
+    
+}
+
+.videop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+
+}
+
+.videop{
+    grid-area: videop;
+    
+}
+
+/*---------------------------------------  FOOTER -------------------------------------------*/
+
+footer{
+    grid-area: footer;
+    background-image: url(../assets/img//s.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+
+
+   
+}
+
+footer img{
+    width: 5%;
+    z-index: 200;
+}  
+
+/*---------------------------------------  Page Nosotros -------------------------------------------*/
+
+.section__aboutus{
+    background-image: url(../assets/img/Fondocover.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    
+    
+
+}
+
+.section__aboutus img{
+    width: 800px;
+    margin-right: 100px;
+    margin-bottom: 5em;
+}
+
+.nosotros__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8rem;
+    
+}
+
+.nosotros__info-text{
+    font-family:TTNorms-Regular;
+    font-size: 1.8em;
+    width: 900px;
+    height: 600px;
+    margin-left: 100px;
+    overflow: scroll;
+    
+}
+
+.nosotros__info-text::-webkit-scrollbar{
+    width: 10px;
+    background-color: rgb(224, 255, 245);
+    
+}
+
+
+
+/*---------------------------------------  Page productos -------------------------------------------*/
+
