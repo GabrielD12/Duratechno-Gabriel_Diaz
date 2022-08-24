@@ -25,7 +25,7 @@
 
 /*---------------------------------------------------- MAIN ---------------------------------------------------------*/
 
-main{
+/* main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 100vh 100vh 100vh 10vh; 
@@ -34,11 +34,34 @@ main{
     "imgp   imgp   imgp   imgp"
     "videop videop videop videop"
     "footer footer footer footer";
-}
+} */
 
 /*---------------------------------------------------- HEADER ---------------------------------------------------------*/
 
-header{
+header ul li{
+    font-family:"TTNorms-Bold";
+
+}
+.color__background{
+    background-image: url(../assets/img/s.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.logo__nav{
+    width: 40%;
+} 
+
+
+.carousel-inner img{
+    object-fit: cover;
+    height: 50vh;
+    width: 100%
+}
+
+
+/* header{
     background-image: url(../assets/img/s.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -102,11 +125,12 @@ nav > ul > li{
 
 
    
-}
-*/
+} */
+
+
 /*------------------------------------------------ COVER -------------------------------------------------*/
 
-.cover{
+/* .cover{
     grid-area: cover;
     
 }
@@ -123,25 +147,19 @@ nav > ul > li{
         height: 100vh;
         
     }
-}
+} */
 
 
 /*-----------------------------------------  ÁREA  IMGP ------------------------------------------------------*/
 
 .conteiner__products{
-    grid-area: imgp;
     background-image: url(../assets/img/s.webp);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    
-    
-    
-
-    
+    height: 100vh;
 
 }
 
@@ -316,24 +334,26 @@ nav > ul > li{
 /*---------------------------------------  FOOTER -------------------------------------------*/
 
 footer{
-    grid-area: footer;
     background-image: url(../assets/img//s.webp);
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: center;
-    
-
-
-   
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 0;
 }
 
 footer img{
-    width: 5%;
-    z-index: 200;
+    width: 100px;
 }  
+
+.footer_contacto{
+    margin-top: 200px;
+
+}
 
 /*---------------------------------------  Page Nosotros -------------------------------------------*/
 
@@ -383,4 +403,27 @@ footer img{
 
 .logo__pages{
     width: 40%;
+}
+
+
+/*---------------------------------------  Page CONTActo -------------------------------------------*/
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
+
+
+
+.contact__page{
+    height: 100vh;
+    background-image: url(../assets/img/Fondocover.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+.container{
+    padding-top: 150px;
+    padding-left: 300px;
 }
